@@ -94,8 +94,8 @@ def test_patient_normalise(test, expected, expect_raises):
         test = np.array(test)
     if expect_raises is not None:
         with pytest.raises(expect_raises):
-            npt.assert_almost_equal(patient_normalise(np.array(test)),
+            npt.assert_almost_equal(patient_normalise(test),
                                     np.array(expected), decimal=2)
     else:
-        npt.assert_almost_equal(patient_normalise(np.array(test)),
+        npt.assert_almost_equal(patient_normalise(test),
                                 np.array(expected), decimal=2)
