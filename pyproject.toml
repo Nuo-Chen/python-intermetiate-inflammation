@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "inflammation"
+version = "1.0.0"
+description = "Analyse patient inflammation data"
+authors = ["Nuo-Chen <nchen67@wisc.edu>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+matplotlib = "^3.5"
+numpy = "^1.21"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
